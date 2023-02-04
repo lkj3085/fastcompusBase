@@ -6,8 +6,8 @@ export const Typography = (props) => {
   return (
     <RNText
       style={{
-        color: props.color,
-        fontSize: props.fontSize,
+        color: props.color ?? "black",
+        fontSize: props.fontSize ?? 10,
       }}>
       {props.children}
     </RNText>

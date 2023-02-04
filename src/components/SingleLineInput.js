@@ -21,6 +21,7 @@ export const SingleLineInput = (props) => {
         style={{ fontSize: props.fontSize ?? 20 }}
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
+        onSubmitEditing={props.onSubmitEditing}
       />
     </View>
   );
